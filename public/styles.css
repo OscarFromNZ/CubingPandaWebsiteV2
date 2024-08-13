@@ -1,0 +1,26 @@
+* {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navbar {
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #13441e;
+}
+
+    .join {
+        background: url('data:image/svg+xml;base64,YOUR_BASE64_ENCODED_SVG_HERE') no-repeat center/cover;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        display: inline-block;
+    }
+
+.nav-link {
+    margin: 0px 20px 0px 20px;
+    font-size: 25px;
+    color: white !important;
+    text-shadow: 1px 1px 2px black;
+}
