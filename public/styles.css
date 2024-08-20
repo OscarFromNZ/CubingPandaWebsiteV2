@@ -10,26 +10,25 @@
     background-color: #13441e;
 }
 
-.btn-green {
-    background-color: #13441e;
+.btn {
     border-radius: 25px;
     padding: 10px 20px;
-    color: white !important;
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-green {
+    background-color: #13441e;
+    color: white !important;
 }
 
 .btn-inverse {
     background-color: white;
-    border-radius: 25px;
-    padding: 10px 20px;
     color: #13441e !important;
-    font-size: 18px;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
     border: 2px solid #13441e;
 }
 
@@ -46,11 +45,13 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
+/* for friendliest */
 .highlighted-text {
     color: #45A64E;
     font-weight: 700;
 }
 
+/* need to make this good, like super good somehow */
 .blob {
     position: absolute;
     z-index: -1;

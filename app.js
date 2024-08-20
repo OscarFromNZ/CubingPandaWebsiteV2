@@ -2,21 +2,28 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// set the view engine to be ejs
+// Set the view engine to be ejs
 app.set('view engine', 'ejs');
 
-// set the views folder
+// Set the views folder
 app.set('views', './views');
 
-// set the (static) public folder
+// Set the (static) public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// listen for / and render index page
+// Listen for / and render index page
 app.get('/', (req, res) => {
     res.render('index');
 })
 
-// listen on port 8080
-app.listen(8080, () => {
-    console.log('Server is running on port 8080, http://localhost:8080');
+let port = 8080;
+
+// Listen on the port specified
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}, ${resolveURLFromPort(port)}`);
 });
+
+// this is stupid but who cares
+function resolveURLFromPort(port) {
+    return `http://localhost:${port}`;
+}
