@@ -1,18 +1,20 @@
-/* Base Styles */
 * {
     font-family: "League Spartan", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-/* Navbar */
+body {
+    height: 100%;
+    background: linear-gradient(#ffffff, #E8FFBB);
+}
+
 .navbar {
     border-radius: 10px;
     margin: 30px 200px;
     background-color: #13441e;
 }
 
-/* Buttons */
 .btn {
     border-radius: 25px;
     padding: 10px 20px;
@@ -22,6 +24,11 @@
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
+}
+
+.section {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .btn-green {
