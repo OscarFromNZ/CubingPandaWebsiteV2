@@ -1,15 +1,18 @@
+/* Base Styles */
 * {
     font-family: "League Spartan", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
+/* Navbar */
 .navbar {
     border-radius: 10px;
     margin: 30px 200px;
     background-color: #13441e;
 }
 
+/* Buttons */
 .btn {
     border-radius: 25px;
     padding: 10px 20px;
@@ -32,10 +35,21 @@
     border: 2px solid #13441e;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     color: #13441e;
     font-size: 36px;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: none;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+p {
+    font-weight: 400;
+}
+
+.underline {
+    border-bottom: 5px solid #45A64E;
 }
 
 .inverse-heading {
@@ -51,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* need to make this good, like super good somehow */
+/* big green blobs */
 .blob {
     position: absolute;
     z-index: -1;
@@ -62,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     filter: blur(50px);
 }
 
+/* card styles */
 .card {
     background-color: #13441e;
     color: white;
@@ -78,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* nav links */
 .nav-link-white {
     padding: 0px 20px;
     font-size: 25px;
@@ -92,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px 2px black;
 }
 
+/* main heading style */
 h1 {
     padding: 0px 20px;
     font-size: 50px;
@@ -99,7 +116,43 @@ h1 {
     text-shadow: 1px 1px 1px black;
 }
 
+/* image styling */
 .image-panda {
     width: 400px;
     height: auto;
+}
+
+/* text alignment helper */
+.text-left {
+    text-align: left;
+}
+
+/* making the stars nice and gold */
+.stars {
+    font-size: 24px;
+    color: #FFDD00; /* gold star color */
+    margin-bottom: 10px;
+}
+
+/* simple text for testimonials */
+.testimonial-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* avatar and author name */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-author span {
+    font-size: 18px;
 }
