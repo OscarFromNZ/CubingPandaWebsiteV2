@@ -5,7 +5,6 @@
 }
 
 body {
-    height: 100%;
     background: linear-gradient(#ffffff, #E8FFBB);
 }
 
@@ -101,7 +100,6 @@ p {
     background-color: #13441e;
     color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card-inverse {
@@ -171,4 +169,37 @@ h1 {
 
 .testimonial-author span {
     font-size: 18px;
+}
+
+.footer {
+    border-radius: 0px;
+}
+
+.footer li {
+    font-weight: 300;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.footer .image-panda {
+    width: 50px;
+    height: auto;
+}
+
+.footer .btn-inverse {
+    background-color: white;
+    color: #13441e;
+    border: 2px solid #13441e;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 10px;
 }
