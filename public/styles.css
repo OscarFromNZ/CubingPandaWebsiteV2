@@ -47,12 +47,21 @@ h1, h2, h3, h4, h5, h6 {
     color: #13441e;
     font-size: 36px;
     text-shadow: none;
-    padding-left: 20px;
     display: inline-block;
+
+    font-weight: 700;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    border-radius: 5px;
 }
 
 p {
     font-weight: 400;
+}
+
+.green {
+    color: #45A64E;
 }
 
 .underline {
@@ -60,10 +69,12 @@ p {
 }
 
 .inverse-heading {
-    color: white;
+    color: white !important;
     background-color: #13441e;
-    padding: 10px;
-    border-radius: 5px;
+}
+
+.white-bg {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* for friendliest */
@@ -85,19 +96,17 @@ p {
 
 /* card styles */
 .card {
+    padding: 20px;
+
     background-color: #13441e;
     color: white;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card-inverse {
-    background-color: white;
-    color: #13441e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white !important;
+    color: #13441e !important;
 }
 
 /* nav links */
