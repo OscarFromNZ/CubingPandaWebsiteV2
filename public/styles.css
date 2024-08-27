@@ -42,7 +42,12 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #13441e;
     font-size: 36px;
     text-shadow: none;
@@ -50,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 
     font-weight: 700;
 
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     width: 100%;
     border-radius: 5px;
 }
@@ -99,11 +104,12 @@ p {
     background-color: #13441e;
     color: white;
     border-radius: 10px;
-    border-color: white;
+    border-width: 0px;
 }
 
 .card-inverse {
-    margin-bottom: 10px; /* bad code */
+    margin-bottom: 10px;
+    /* bad code */
     background-color: white !important;
     color: #13441e !important;
 }
@@ -114,6 +120,7 @@ p {
     font-size: 25px;
     color: white !important;
     text-shadow: 1px 1px 2px black;
+    list-style: none !important;
 }
 
 .nav-link {
@@ -145,7 +152,8 @@ h1 {
 /* making the stars nice and gold */
 .stars {
     font-size: 24px;
-    color: #FFDD00; /* gold star color */
+    color: #FFDD00;
+    /* gold star color */
     margin-bottom: 10px;
 }
 
@@ -172,18 +180,6 @@ h1 {
     font-size: 18px;
 }
 
-.footer {
-    border-radius: 0px;
-    width: 100%;
-}
-
-.footer li {
-    font-weight: 300;
-    list-style: none;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
 .footer hr {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     margin: 20px 0;
@@ -194,14 +190,42 @@ h1 {
     height: auto;
 }
 
-.footer .btn-inverse {
-    background-color: white;
-    color: #13441e;
-    border: 2px solid #13441e;
-    border-radius: 25px;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 10px;
+footer {
+    background-color: #13441e;
+    color: white;
+    /* Same as text-muted */
+}
+
+footer .inverse-heading {
+    color: #212529;
+    font-weight: 600;
+    /* Make headings bold */
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+footer .image-panda {
+    margin-right: 10px;
+}
+
+.white {
+    background-color: white !important;
+}
+
+a {
+    color: white;
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-shadow: 1px 1px 1px black !important;
+    color: #45A64E !important;
 }
