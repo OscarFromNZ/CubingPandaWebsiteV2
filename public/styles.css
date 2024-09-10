@@ -58,6 +58,8 @@ h6 {
     background-color: white;
     width: 100%;
     border-radius: 5px;
+
+    margin-top: 20px;
 }
 
 p {
@@ -228,4 +230,8 @@ a {
 a:hover {
     text-shadow: 1px 1px 1px black !important;
     color: #45A64E !important;
+}
+
+.img {
+    border-radius: 5%;
 }

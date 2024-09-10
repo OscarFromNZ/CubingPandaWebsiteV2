@@ -14,7 +14,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Listen for / and render index page
 app.get('/', (req, res) => {
     res.render('index');
-})
+});
+
+app.get('/about', (req, res) => {
+    res.render('about');
+});
 
 let port = 8080;
 
