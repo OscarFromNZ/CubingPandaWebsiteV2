@@ -11,13 +11,20 @@ app.set('views', './views');
 // Set the (static) public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Listen for / and render index page
 app.get('/', (req, res) => {
     res.render('index');
 });
 
 app.get('/about', (req, res) => {
     res.render('about');
+});
+
+app.get('/collaborate', (req, res) => {
+    res.render('collaborate');
+});
+
+app.get('/login', (req, res) => {
+    res.render('login');
 });
 
 let port = 8080;
