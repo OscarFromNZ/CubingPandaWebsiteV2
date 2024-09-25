@@ -243,8 +243,6 @@ a:hover {
     background: radial-gradient(circle at center, #e0ffcc, #adebad);
     border-radius: 50%;
     filter: blur(50px);
-    top: 50px; /* Adjust positioning */
-    left: 50px;
 }
 
 

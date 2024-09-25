@@ -40,3 +40,7 @@
     </div>
 </footer>
 </html>
+
+<% blobs.forEach(function(blob) { %>
+    <div style="top: <%= blob.top %>px; left: <%= blob.left %>px;" class="blob"></div>
+<% }) %>
