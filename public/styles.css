@@ -239,6 +239,9 @@ a:hover {
 }
 
 
+* {
+    overflow-x: hidden; /* no blobs escape */
+}
 
 /* big green blobs */
 .blob {
