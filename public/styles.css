@@ -14,9 +14,12 @@ body {
     position: relative;
 }
 
-.section, .container, body {
-    overflow: visible; /* Ensure blob is not clipped */
-  }
+.section,
+.container,
+body {
+    overflow: visible;
+    /* Ensure blob is not clipped */
+}
 
 .navbar {
     border-radius: 10px;
@@ -98,6 +101,7 @@ p {
     color: #45A64E;
     font-weight: 700;
 }
+
 /* card styles */
 .card {
     padding: 20px;
@@ -246,7 +250,7 @@ a:hover {
 }
 
 
-.blob { 
+.blob {
     width: 500px;
     height: 500px;
     background: linear-gradient(180deg,
@@ -290,4 +294,47 @@ a:hover {
         transform: translate(500px, 100px) rotate(-10deg);
         border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }
+}
+
+
+
+
+
+
+body {
+    animation: party-time 0.9s infinite;
+}
+
+@keyframes dancing-time {
+    0% {
+        background-position: 100% center;
+    }
+
+    25% {
+        background-position: 70% center;
+    }
+
+    50% {
+        background-position: 40% center;
+    }
+
+    75% {
+        background-position: 70% center;
+    }
+
+    100% {
+        background-position: 100% center;
+    }
+}
+
+p {
+    background: url("https://media.tenor.com/jqVTOQtZbG4AAAAM/green-wallpaper-wallpaper.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    animation: dancing-time 0.9s infinite;
+    background-position: 50% center;
+    transition: .4s ease-in-out;
 }
